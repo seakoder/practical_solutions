@@ -1,0 +1,15 @@
+* {
+    background-color: white !important;
+    color: black !important;
+}
+
+.cards-main {
+    border: 0.5px solid rgb(179, 176, 176);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px;
+}
+
+.cards-inner-main {
+    margin: 20px;
+}
