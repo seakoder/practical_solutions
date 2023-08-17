@@ -1,14 +1,23 @@
-import { useState } from 'react'
+import React from 'react'
+import Home from './components/home'
+import Logon from './components/logon'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const login = localStorage.getItem('login');
 
   return (
     <>
-     Testing
+      {
+        login ?
+          <Home />
+          :
+          <Logon />
+      }
     </>
   )
+
 }
 
 export default App
