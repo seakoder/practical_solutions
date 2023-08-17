@@ -22,11 +22,9 @@ export default function index() {
         <div className="home-main">
             HOME
             <br />
-            <div>
+            <div className='items' >
                 {
-                    cardData.map(element => <div className="d-flex flex-row flex-wrap justify-content-center">
-                        <Cards element={element} />
-                    </div>)
+                    cardData.map((element, i) => <Cards key={i} element={element} />)
                 }
             </div>
         </div>

@@ -41,3 +41,7 @@ button:hover {
 img {
     cursor: pointer;
 }
+
+.items {
+    display: flex;
+}
